@@ -857,23 +857,15 @@ img {
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 0;
-}
-
-.footer__subscription {
-  width: 50%;
 }
 
 .footer__box {
   display: flex;
-  width: 50%;
-  margin-right: 93px;
-  align-items: baseline;
-}
-
-.footer__contacts {
-  margin-right: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contacts__item:not(:last-child) {

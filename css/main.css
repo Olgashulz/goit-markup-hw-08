@@ -8,7 +8,7 @@
   --social-link-color: #afb1b8;
   --colorOn-darkВackground: #ffffff;
   --indent: 94px;
-  --margin-bottom-title: 50px;
+  --margin-bottom-title: 30px;
   --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -126,12 +126,24 @@ img {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 1.17857;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: var(--margin-bottom-title);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: 1.16667;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
 }
 
 .social__list {
@@ -728,28 +740,37 @@ img {
   background: #f5f4fa;
 }
 
-.team__container {
-  margin-bottom: 0;
-}
-
-.team__list {
-  display: flex;
-  padding-bottom: var(--indent);
+@media screen and (min-width: 768px) {
+  .team__list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team__card {
-  flex-basis: calc((100% -90px) / 4);
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__card + .team__card {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .team__card {
+    margin-bottom: 30px;
+  }
 }
 
-.team__img {
-  max-width: 100%;
+@media screen and (min-width: 768px) {
+  .team__card {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .team__caption {
@@ -757,18 +778,21 @@ img {
 }
 
 .team__name {
-  margin-bottom: 10px;
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 0.8;
+  line-height: 1.1875;
+  font-weight: 500;
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
 .team__position {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.1875;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;

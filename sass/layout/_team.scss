@@ -7,6 +7,12 @@
     flex-wrap: wrap;
     }
   }
+ 
+  .team__card:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 
   &__card {
     background-color: white;
@@ -14,9 +20,6 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
     @media screen and (min-width: 768px) {
       margin: 15px;
       width: calc((100% - 4 * 15px) / 2);
@@ -24,7 +27,8 @@
     @media screen and (min-width: 1200px) {
       width: calc((100% - 8 * 15px) / 4);
     }
-   }
+
+    }
 
   &__caption {
     padding: 30px 32px;

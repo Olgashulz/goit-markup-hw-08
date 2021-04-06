@@ -656,10 +656,9 @@ img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .advantage__container {
-    padding-bottom: 0;
-    background-color: blueviolet;
+    padding-bottom: 0px;
   }
 }
 
@@ -784,16 +783,16 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .team .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team__card {
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (max-width: 767px) {
-  .team__card {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {

@@ -1,4 +1,13 @@
 .works {
+
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px){
+    display: block;
+  }
+  
   &__item {
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
@@ -6,7 +15,6 @@
 
   &__list {
     display: flex;
-    padding-bottom: var(--indent);
 
     & :not(:last-child) {
       margin-right: 30px;

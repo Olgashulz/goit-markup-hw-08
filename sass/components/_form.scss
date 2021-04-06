@@ -3,10 +3,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px){
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
 }
 
 .form__input {
-   padding: 15px 0 15px 16px;
+  padding: 15px 0 15px 16px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -17,6 +23,12 @@
   color: var(--colorOn-darkВackground);
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 8px;
+    margin-right: 12px;
+
+  }
 
   &::placeholder {
     font-family: var(--main-font);

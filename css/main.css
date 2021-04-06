@@ -656,6 +656,13 @@ img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .advantage__container {
+    padding-bottom: 0;
+    background-color: blueviolet;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantage__list {
     margin: -15px;

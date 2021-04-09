@@ -75,32 +75,6 @@
   }
 }
 
-// .projects__box {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .projects__box > .projects__title {
-//   flex-grow: 1;
-// }
-
-// .projects__item > .projects__link {
-//   flex-grow: 1;
-// }
-// .card > .content {
-//   flex-grow: 1;
-// }
-// &:nth-child(3n + 1) {
-//   margin-left: 0;
-// }
-
-// &:nth-child(-n + 3) {
-//   margin-top: 0;
-// }
-
-// .projects__item list .link {
-//   display: block;
-// }
 
 .projects__img {
   max-width: 100%;
@@ -162,6 +136,15 @@
   color: var(--text-color);
 }
 
+
+.projects__item{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__box{
+  flex-grow: 1;
+}
 // -------------------
 
 // .projects-links {

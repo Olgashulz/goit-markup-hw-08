@@ -611,6 +611,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
   background-color: #fff;
   opacity: 0;
   transform: translateY(-100%) translateX(-50%);
@@ -1329,5 +1330,14 @@ img {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__box {
+  flex-grow: 1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1263,13 +1263,13 @@ img {
   .projects__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
-    display: flex;
-    flex-direction: column;
   }
 }
 
-.projects__item > .projects__item {
-  flex-grow: 1;
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .projects__img {

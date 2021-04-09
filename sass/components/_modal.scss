@@ -6,10 +6,14 @@
   left: 50%;
   padding: 40px;
   background-color: var(--colorOn-darkВackground);
-  width: 528px;
+  width: 450px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width: 1200px){
+    width: 528px;    
+  }
 }
 
 .modal__tittle {
@@ -144,16 +148,24 @@
 }
 
 .policy__text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @media screen and(min-width: 1200px){
+    font-size: 14px;    
+  }
 }
 
 .policy__agreement {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  @media screen and(min-width: 1200px){
+    font-size: 14px;    
+  }
 }
 
 .checkbox {

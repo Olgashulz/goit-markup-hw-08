@@ -612,6 +612,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: scroll;
+  z-index: 1;
   background-color: #fff;
   opacity: 0;
   transform: translateY(-100%) translateX(-50%);
@@ -1333,6 +1334,10 @@ img {
 }
 
 .projects__item {
+  display: flex;
+}
+
+.projects__link {
   display: flex;
   flex-direction: column;
 }

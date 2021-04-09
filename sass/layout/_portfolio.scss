@@ -139,6 +139,10 @@
 
 .projects__item{
   display: flex;
+}
+
+.projects__link {
+  display: flex;
   flex-direction: column;
 }
 

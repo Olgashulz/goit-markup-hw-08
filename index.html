@@ -201,11 +201,20 @@
           <ul class="works__list list">
             <li class="works__item">
               <div class="works__tumb">
-                <img
-                  class="works__img"
-                  src="./images/about/whatWeDo_img_3.jpg"
-                  alt="Сотрудник работает на компьютере"
-                />
+                
+                <picture>
+                    <source
+                    srcset="./images/desktop/works/works1-desk-img.webp 1x, ./images/desktop/works/works1-desk-img@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                    srcset="./images/desktop/works/works1-desk-img.jpg 1x, ./images/desktop/works/works1-desk-img@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img
+                        class="works__img"
+                        src="./images/desktop/works/works1-desk-img.jpg"
+                        alt="Сотрудник работает на компьютере"/>
+                    </picture>
+
                 <div class="works__сaption">
                   <p class="works__description">Десктопные приложения</p>
                 </div>
@@ -213,11 +222,20 @@
             </li>
             <li class="works__item">
               <div class="works__tumb">
-                <img
-                  class="works__img"
-                  src="./images/about/whatWeDo_img_1.jpg"
-                  alt="Девушка работает над мобильным приложением"
-                />
+                <picture>
+                    <source
+                    srcset="./images/desktop/works/works2-desk-img.webp 1x, ./images/desktop/works/works2-desk-img@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                    srcset="./images/desktop/works/works2-desk-img.jpg 1x, ./images/desktop/works/works2-desk-img@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img
+                        class="works__img"
+                        src="./images/desktop/works/works2-desk-img.jpg"
+                        alt="Девушка работает над мобильным приложением"/>
+                    </picture>
+
+             
                 <div class="works__сaption">
                   <p class="works__description">Мобильные приложения</p>
                 </div>
@@ -225,11 +243,19 @@
             </li>
             <li class="works__item">
               <div class="works__tumb">
-                <img
+                <picture>
+                    <source
+                    srcset="./images/desktop/works/works3-desk-img.webp 1x, ./images/desktop/works/works3-desk-img@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                    srcset="./images/desktop/works/works3-desk-img.jpg 1x, ./images/desktop/works/works3-desk-img@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <img
                   class="works__img"
-                  src="./images/about/whatWeDo_img_2.jpg"
-                  alt="Девушка работает с цветовой палитрой"
-                />
+                  src="./images/desktop/works/works3-desk-img.jpg"
+                  alt="Девушка работает с цветовой палитрой"/>
+                    </picture>
+                   
                 <div class="works__сaption">
                   <p class="works__description">Дизайнерские решения</p>
                 </div>
@@ -660,3 +686,6 @@
     <script src="./js/modal-menu.js"></script>
   </body>
 </html>
+
+
+

@@ -6,10 +6,14 @@
   left: 50%;
   padding: 40px;
   background-color: var(--colorOn-darkВackground);
-  width: 450px;
+  width: 100vw;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 450px){
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px){
     width: 528px;    
@@ -145,6 +149,14 @@
   align-items: center;
   margin-top: 20px;
   cursor: pointer;
+  flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (min-width: 450px){
+      flex-direction: row;
+      align-items: center;
+    }
+   
 }
 
 .policy__text {

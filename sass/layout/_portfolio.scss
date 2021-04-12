@@ -113,6 +113,11 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   padding: 63px 24px;
+
+  @media screen and (max-width: 450px){
+    font-size: 14px;
+    padding-top: 30px;
+  }
 }
 
 .projects__box {
@@ -136,7 +141,7 @@
   color: var(--text-color);
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (min-width: 768px){
 .projects__item{
   display: flex;
 }

@@ -962,6 +962,7 @@ img {
 
 .works__list {
   display: flex;
+  height: 294px;
 }
 
 .works__list :not(:last-child) {

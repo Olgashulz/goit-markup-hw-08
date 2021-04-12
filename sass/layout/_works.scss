@@ -15,6 +15,7 @@
 
   &__list {
     display: flex;
+    height: 294px;
 
     & :not(:last-child) {
       margin-right: 30px;

@@ -136,7 +136,7 @@
   color: var(--text-color);
 }
 
-
+@media screen and (max-width: 1199px){
 .projects__item{
   display: flex;
 }
@@ -149,4 +149,4 @@
 .projects__box{
   flex-grow: 1;
 }
-
+}

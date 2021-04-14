@@ -18,9 +18,8 @@
   @media screen and (min-width: 1200px){
     width: 528px;    
   }
-}
 
-.modal__tittle {
+&__tittle {
   margin-bottom: 30px;
 
   font-family: var(--main-font);
@@ -32,17 +31,17 @@
   color: var(--title-color);
 }
 
-.modal__field {
+&__field {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.modal__field + .modal__field {
+&__field + &__field {
   margin-top: 28px;
 }
 
-.modal__text {
+&__text {
   position: absolute;
   top: 50%;
   left: 41px;
@@ -55,18 +54,18 @@
 
   color: var(--text-color);
 
-  .modal__input:not(:placeholder-shown) + & {
+  &__input:not(:placeholder-shown) + & {
     transform: translateY(-35px) translateX(-40px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .modal__field:focus-within > & {
+  &__field:focus-within > & {
     transform: translateY(-35px) translateX(-40px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.modal__svg {
+&__svg {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -76,13 +75,13 @@
   width: 18px;
   height: 18px;
 
-  .modal__input:focus ~ & {
+  &__input:focus ~ & {
     fill: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.modal__textarea {
+&__textarea {
   resize: none;
   height: 120px;
   width: 100%;
@@ -112,7 +111,7 @@
   }
 }
 
-.modal__coment {
+&__coment {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -120,7 +119,7 @@
   margin-bottom: 4px;
 }
 
-.modal__input {
+&__input {
   padding: 11px 41px;
   z-index: 1;
 
@@ -142,6 +141,8 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+}
+
 
 .policy {
   display: flex;
@@ -155,11 +156,9 @@
     @media screen and (min-width: 450px){
       flex-direction: row;
       align-items: center;
-    }
-   
-}
+    }  
 
-.policy__text {
+&__text {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -170,7 +169,7 @@
   }
 }
 
-.policy__agreement {
+&__agreement {
   font-size: 12px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -178,6 +177,7 @@
   @media screen and (min-width: 1200px){
     font-size: 14px;    
   }
+}
 }
 
 .checkbox {
@@ -239,9 +239,8 @@
     border: 1px solid #2196f3;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
 
-.closeButton__svg {
+&__svg {
   fill: #000;
   width: 11px;
   height: 11px;
@@ -250,4 +249,5 @@
     fill: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
 }

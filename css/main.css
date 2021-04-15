@@ -806,6 +806,10 @@ img {
   padding-left: 10px;
 }
 
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .page-header__container {
   display: flex;
   align-items: center;
@@ -1479,5 +1483,9 @@ img {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.contacts__map {
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

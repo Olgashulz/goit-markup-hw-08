@@ -806,6 +806,10 @@ img {
   padding-left: 10px;
 }
 
+.contacts__map {
+  display: flex;
+}
+
 .block-contacts__list {
   display: flex;
   flex-wrap: wrap;
@@ -1742,8 +1746,8 @@ img {
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects__container--overlay:hover .projects__container--overlay,
-.projects__container--overlay:focus .projects__container--overlay {
+.projects__link:hover .projects__container--overlay,
+.projects__link:focus .projects__container--overlay {
   transform: translateY(0%);
   opacity: 1;
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);

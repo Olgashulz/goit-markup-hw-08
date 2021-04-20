@@ -123,12 +123,12 @@
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover &,
-    &:focus & {
-      transform: translateY(0%);
-      opacity: 1;
-      transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  .projects__link:hover &,
+  .projects__link:focus & {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   }
 
   &__description {
@@ -171,18 +171,3 @@
   }
 }
 
-// .map-responsive{
-//   width: 500px;
-//   height: 500px;
-//   overflow:hidden;
-//   padding-bottom:56.25%;
-//   position:relative;
-//   height:0;
-// }
-// .map-responsive iframe{
-//   left:0;
-//   top:0;
-//   height:100%;
-//   width:100%;
-//   position:absolute;
-// }
